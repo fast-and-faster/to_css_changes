@@ -1,0 +1,193 @@
+.ui-datepicker {
+    background-color: #fff;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1) !important;
+    padding: 1rem;
+    position: relative;
+    border: 1px solid #ddd;
+    display: none;
+/* 	changes here */
+	
+	height: auto;
+	width: auto;
+}
+
+.ui-datepicker:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #ddd;
+    top: -15px;
+}
+
+.ui-datepicker:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid white;
+    top: -13px;
+}
+
+.ui-datepicker-group {
+    float: left !important;
+    padding: 20px 20px 20px 0;
+}
+
+.ui-datepicker-header {
+    background: none !important;
+    text-shadow: none !important;
+    color: #333 !important;
+    border: 0 !important;
+    margin-bottom: 6px !important;
+}
+
+.ui-datepicker-title {
+    font-size: 15px !important;
+    text-align: center;
+}
+
+.ui-datepicker-month,
+.ui-datepicker-year {
+    width: auto;
+    display: inline-block;
+    height: 2rem;
+    text-indent: 0;
+}
+
+.ui-datepicker-month {
+    margin-right: 0.5rem;
+}
+
+.ui-datepicker thead {
+    border: 0 !important;
+    background: none !important;
+}
+
+.ui-datepicker th {
+    font-size: 12px !important;
+    font-weight: bold;
+    color: #ccc !important;
+}
+
+.ui-datepicker tbody tr {
+    border: 0 !important;
+}
+
+.ui-datepicker tbody td {
+    background-color: transparent;
+    border: 0 !important;
+    padding: 0 !important;
+}
+
+.ui-datepicker-prev {
+    position: absolute;
+    left: 10px;
+    line-height: 30px !important;
+    background: none !important;
+}
+
+.ui-datepicker-prev:after {
+    content: '◀';
+    color: #548d3d !important;
+}
+
+.ui-state-disabled.ui-datepicker-prev:after {
+    color: #ccc !important;
+}
+
+.ui-icon.ui-icon-circle-triangle-w {
+    display: none;
+}
+
+.ui-datepicker-next {
+    position: absolute;
+    right: 10px;
+    line-height: 2rem !important;
+    background: none !important;
+}
+
+.ui-icon-circle-triangle-e {
+    display: none;
+}
+
+.ui-datepicker-next:after {
+    content: 'â–¶';
+    color: #f6861f !important;
+}
+
+.ui-state-disabled.ui-datepicker-next:after {
+    color: #ccc !important;
+}
+
+.ui-datepicker-calendar .ui-state-default {
+    background: #f5f5f5 !important;
+    font-weight: normal !important;
+    font-size: 13px !important;
+    text-shadow: none !important;
+    border: 1px solid #f5f5f5 !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    color: #333;
+}
+
+.ui-datepicker-calendar .ui-datepicker-today a {
+    font-weight: bold !important;
+}
+
+.ui-datepicker-calendar .ui-datepicker-current-day a {
+    background-color: #548d3d !important;
+    color: #fff !important;
+    border: 1px solid #548d3d !important;
+}
+
+.ui-datepicker-calendar .ui-state-hover {
+    background-color: #fff !important;
+    border: 1px solid green !important;
+}
+
+.ui-datepicker-unselectable.ui-state-disabled {
+    background: none !important;
+}
+
+.ui-datepicker-unselectable.ui-state-disabled span {
+    background: none !important;
+    font-weight: normal !important;
+    color: #eee !important;
+    border: 1px solid transparent !important;
+}
+
+.ui-datepicker-calendar .ui-datepicker-other-month span {
+    color: #ccc !important;
+}
+
+.ui-datepicker-calendar .wrong {
+    background-color: #ff0000 !important;
+}
+
+div.ui-datepicker-group-first td:not(.ui-datepicker-other-month) ~ td.ui-datepicker-other-month {
+    visibility: hidden;
+}
+
+div.ui-datepicker-group-last td {
+    visibility: hidden;
+}
+
+div.ui-datepicker-group-last td.ui-datepicker-other-month ~ td:not(.ui-datepicker-other-month),
+div.ui-datepicker-group-last td:not(.ui-datepicker-other-month),
+div.ui-datepicker-group-last td:not(.ui-datepicker-other-month) ~ td.ui-datepicker-other-month {
+    visibility: visible;
+}
+

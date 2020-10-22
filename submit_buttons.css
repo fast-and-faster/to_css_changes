@@ -1,0 +1,20 @@
+.gform_page_footer input.button {
+	background-color: white !important;
+	color: black !important;
+	border: green solid 1.5px !important;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1) !important;
+	transition: all 0.3s ease 0s;
+	
+}
+
+.gform_page_footer input.button:hover {
+	background-color: green !important;
+	box-shadow: 0px 15px 20px lightgreen !important;
+	color: white !important;
+	cursor: pointer;
+	transform: translateY(-7px);
+
+}
+
+
+
